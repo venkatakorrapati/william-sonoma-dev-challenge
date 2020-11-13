@@ -43,20 +43,6 @@ function Header(props) {
   // register it to the container
   const container = document.getElementById(props.container);
   container.appendChild(header);
-
-  // Removed sticky functionality as it caused problems with formatting and rendering
-  // Would have been a nice feature but it was eating up time
-  // make it sticky
-  // const sticky = header.offsetTop;
-
-  // function makeSticky() {
-  //   if (window.pageYOffset > sticky) {
-  //     header.classList.add('header-sticky');
-  //   } else {
-  //     header.classList.remove('header-sticky');
-  //   }
-  // }
-  // window.onscroll = makeSticky;
   return header;
 }
 
